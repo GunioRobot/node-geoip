@@ -15,7 +15,7 @@ def configure(conf):
 
 def build(context, target=target):
     obj = context.new_task_gen('cxx', 'shlib', 'node_addon')
-    
+
     obj.uselib = 'GeoIP'
     obj.source = 'src/ceoip.cc'
     obj.target = target
